@@ -1,6 +1,0 @@
-#!/bin/bash
-set -e
-
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
-
-#ln -s /Users/jscarfon/Work/MyNeovim-master/init.vim /Users/jscarfon/.config/nvim/init.js
