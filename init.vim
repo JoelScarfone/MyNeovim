@@ -9,6 +9,9 @@ Plug 'ntpeters/vim-better-whitespace'
 " rust code completion + navigation
 Plug 'racer-rust/vim-racer'
 
+" color scheme
+Plug 'joshdick/onedark.vim'
+
 call plug#end()
 
 " nerdtree config
@@ -31,12 +34,15 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 " <Ctrl-l> redraws screen, removing highlighting
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
-" Vagrant file detection
+" vagrant file detection
 augroup vagrant
 au!
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup end
 
-" Rust quick navigation
+" rust quick navigation
 au Filetype rust nmap gd <Plug>(rust-def)
 au Filetype rust nmap gs <Plug>(rust-def-vertical)
+
+" enable color scheme
+color onedark
