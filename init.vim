@@ -12,6 +12,9 @@ Plug 'racer-rust/vim-racer'
 " color scheme
 Plug 'joshdick/onedark.vim'
 
+" git utilities
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " nerdtree config
@@ -46,3 +49,7 @@ au Filetype rust nmap gs <Plug>(rust-def-vertical)
 
 " enable color scheme
 color onedark
+
+" enable history caching
+set undofile
+set undodir=~/.config/nvim
